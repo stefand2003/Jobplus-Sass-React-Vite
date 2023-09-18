@@ -1,0 +1,94 @@
+.sector {
+  padding: 10rem;
+
+  h2 {
+    font-size: 26rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14rem;
+    text-align: center;
+    margin-bottom: 20rem;
+  }
+
+  &__types {
+    display: grid;
+  }
+
+  &__wrap {
+    display: grid;
+    margin-bottom: 15rem;
+  }
+
+  &__picture {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    filter: brightness(30%);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: center;
+
+    z-index: 1;
+    font-family: "OpenSans ExtraBold";
+    color: var(--light);
+    font-size: 26rem;
+    text-align: center;
+  }
+
+  &__browse {
+    border: 1px var(--beta) solid;
+    padding: 10rem;
+    border-radius: 5rem;
+    text-align: center;
+    color: var(--beta);
+    margin-bottom: 15rem;
+  }
+
+  &__mlist, &__list {
+    font-size: 17rem;
+    span {
+      color: var(--beta);
+      font-size: 14rem;
+    }
+    li {
+      margin-top: 8rem;
+    }
+  }
+
+  &__list {
+    display: none;
+  }
+
+  @include respond-to('small') {
+    h2 {
+      font-size: 34rem;
+    }
+
+    p {
+      font-size: 18rem;
+    }
+
+    &__types {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 10rem;
+    }
+
+    &__browse, &__mlist {
+      display: none;
+    }
+
+    &__list {
+      display: block;
+      font-size: 15rem;
+    }
+  }
+}

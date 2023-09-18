@@ -1,0 +1,30 @@
+.filter {
+  display: none;
+
+  @include respond-to('small') {
+    display: block;
+    margin-right: 20rem;
+
+    &__links {
+      background-color: var(--light);
+      width: 220rem;
+      padding: 15rem;
+      margin-bottom: 20rem;
+
+      h1 {
+        font-size: 15rem;
+        margin-bottom: 15rem;
+      }
+
+      li {
+        font-size: 15rem;
+        color: var(--beta);
+        margin-bottom: 10rem;
+        span {
+          color: var(--gamma);
+          font-size: 13rem;
+        }
+      }
+    }
+  }
+}

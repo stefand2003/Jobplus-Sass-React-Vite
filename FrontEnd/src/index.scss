@@ -1,0 +1,20 @@
+// In here we have all the imports we want to apply to all components 
+// in our project.
+
+// Variables and breakpoints can't be defined here, because of scoping issues.
+// They have to be defined in the component's scss file.
+// So for that we can manually import the variables and breakpoints files in each component's scss file.
+// or configure vite.config to do it automatically.
+
+// RESETS
+@import 'assets/sass/resets/normalize';
+@import 'assets/sass/resets/reset.local';
+@import 'assets/sass/resets/typography';
+@import 'assets/sass/resets/placeholder';
+
+// UTILITIES
+@import 'assets/sass/utilities/fonts';
+
+// COLOURS
+@import 'assets/sass/colours/colours';
+

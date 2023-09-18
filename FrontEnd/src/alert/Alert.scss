@@ -1,0 +1,31 @@
+.alert {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+
+  &--error {
+    background-color: #fee2e2;
+    border: 1px solid #f87171;
+    color: #b91c1c;
+  }
+
+  &--success {
+    background-color: #d1fae5;
+    border: 1px solid #34d399;
+    color: #059669;
+  }
+
+  &__message {
+    font-size: 16px;
+  }
+
+  &__details {
+    font-size: 14px;
+    list-style-type: disc;
+    padding-left: 20px;
+
+    li:first-child {
+      margin-top: 10px;
+    }
+  }
+}

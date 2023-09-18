@@ -1,0 +1,41 @@
+.hero {
+  padding: 10rem;
+  background-color: var(--light);
+
+  &--bgimg {
+    background-image: url(../../assets/images/hero-small.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0 3000px rgba(0, 0, 0, 0.7) inset;
+  }
+
+  h1 {
+    font-size: 26rem;
+    color: var(--light);
+    line-height: 30rem;
+    margin-bottom: 15rem;
+  }
+
+  h2 {
+    font-size: 19rem;
+    color: var(--gamma);
+  }
+
+  @include respond-to('small') {
+    &__wrap {
+      max-width: 895rem;
+      margin: 10rem auto;
+    }
+
+    &--bgimg {
+      background-image: url(../../assets/images/hero-big.svg);
+    }
+
+    h1 {
+      font-size: 38rem;
+      max-width: 500rem;
+      line-height: 40rem;
+    }
+  }
+}
